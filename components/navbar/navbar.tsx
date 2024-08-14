@@ -1,23 +1,35 @@
-"use client"
+"use client";
 
 import Link from "next/link";
 import { Popover, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/16/solid";
 import { Fragment } from "react";
+import Image from "next/image";
+import { Button } from "@/components/ui/button"
+
 
 export default function Navbar() {
   return (
-    <Popover className="container mx-auto flex items-center border-b-2 px-6 py-2 h-24">
-      <h1 className="font-bold">Colibri</h1>
-      <div className="grow">
+    <Popover className="fixed top-0 left-0 right-0 z-50 mx-auto flex items-center px-6 py-2 h-24 bg-white bg-opacity-30 backdrop-blur-lg rounded-lg">
+      <div className="max-w-40 mx-auto sm:max-w-20 md:max-w-32 md:mx-auto">
+        <Image
+          src="/logo-avanti.png"  // Caminho da imagem
+          alt="Descrição da imagem"
+          layout="responsive"  // Define o layout responsivo
+          width={20}          // Largura original da imagem
+          height={50}         // Altura original da imagem
+          priority={true}      // Prioridade de carregamento
+        />
+      </div>
+      <div className="grow ltr:ml-3 rtl:mr-3">
         <div className="hidden sm:flex items-center justify-center gap-2 md:gap-8">
-          <Link href="/home">TESTE</Link>
-          <Link href="/home">TESTE</Link>
-          <Link href="/home">TESTE</Link>
-          <Link href="/home">TESTE</Link>
-        </div>    
+        <Link href="https://www.google.com" passHref className="mr-2 font-bold"><Button variant="link">Ghost</Button></Link>
+        <Link href="https://www.google.com" passHref className="mr-2 font-bold"><Button variant="link">Ghost</Button></Link>
+        <Link href="https://www.google.com" passHref className="mr-2 font-bold"><Button variant="link">Ghost</Button></Link>
+        
+        </div>
         <div className="flex grow items-center justify-end sm:hidden">
-          <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"> 
+          <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
             <span className="sr-only">Open Menu</span>
             <Bars3Icon className="h-6 w-6" aria-hidden="true"/>
           </Popover.Button>
@@ -40,7 +52,7 @@ export default function Navbar() {
                     <div className="flex items-center justify-between">
                       <h1 className="font-bold">Colibri</h1>
                       <div className="-mr-2">
-                        <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"> 
+                        <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
                           <span className="sr-only">Close Menu</span>
                           <XMarkIcon className="h-6 w-6" aria-hidden="true"/>
                         </Popover.Button>
@@ -62,7 +74,7 @@ export default function Navbar() {
         </div>
       </div>
       <div className="hidden sm:block">
-        <Link href="https://www.google.com" passHref className="mr-2 font-bold">Google</Link>
+        <Link href="https://www.google.com" passHref className="mr-2 font-bold"><Button variant="ghost">Ghost</Button></Link>
       </div>
     </Popover>
   );
