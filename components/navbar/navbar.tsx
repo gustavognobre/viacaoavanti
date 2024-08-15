@@ -74,7 +74,7 @@ export default function Navbar() {
         </div>
       </div>
       <div className="hidden sm:block">
-        <Link href="https://www.google.com" passHref className="mr-2 font-bold"><Button variant="ghost">Ghost</Button></Link>
+        <Link href="https://wa.me/5538992300030?text=Gostaria%20de%20saber%20mais%20sobre%20a%20Via%C3%A7%C3%A3o%20Avanti" passHref className="mr-2 font-bold"><Button variant="ghost">Contato</Button></Link>
       </div>
     </Popover>
   );
