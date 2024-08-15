@@ -25,7 +25,7 @@ export default function Navbar() {
         <div className="hidden sm:flex items-center justify-center gap-2 md:gap-8">
         <Link href="https://www.google.com" passHref className="mr-2 font-bold"><Button variant="link">Ghost</Button></Link>
         <Link href="https://www.google.com" passHref className="mr-2 font-bold"><Button variant="link">Ghost</Button></Link>
-        <Link href="https://www.google.com" passHref className="mr-2 font-bold"><Button variant="link">Ghost</Button></Link>
+        <Link href="https://www.linkedin.com/company/via-oavanti/jobs/" passHref className="mr-2 font-bold"><Button variant="link">Venha ser Avanti!</Button></Link>
         
         </div>
         <div className="flex grow items-center justify-end sm:hidden">
