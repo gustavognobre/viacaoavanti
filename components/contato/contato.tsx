@@ -2,7 +2,7 @@ import React from "react";
 
 const Contato: React.FC = () => {
   return (
-    <div className="bg-slate-100 py-12 px-4 sm:px-6 lg:px-8">
+    <div className="bg-slate-100 py-12 px-4 sm:px-6 lg:px-8 font-montserrat">
       <div className="max-w-7xl mx-auto ">
         
 
@@ -16,13 +16,13 @@ const Contato: React.FC = () => {
             </p>
             <ul className="text-gray-600">
               <li className="mb-4">
-                <strong>Endereço:</strong> Rua Exemplo, 123, Montes Claros, MG
+                <strong>Endereço:</strong> Av. Comendador Antonio Loureiro Ramos, 640 - Distrito Industrial, Montes Claros - MG, 39404-620
               </li>
               <li className="mb-4">
-                <strong>Telefone:</strong> (38) 1234-5678
+                <strong>Telefone:</strong> (38) 99230-0030
               </li>
               <li className="mb-4">
-                <strong>Email:</strong> contato@viacaoavanti.com.br
+                <strong>Email:</strong> comercial@viacaoavanti.com.br
               </li>
             </ul>
           </div>
@@ -34,7 +34,7 @@ const Contato: React.FC = () => {
             <div className="w-full h-96 rounded-lg overflow-hidden shadow-lg">
               <iframe
                 className="w-full h-full border-0"
-                src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1910.5071716896366!2d-43.845321442474095!3d-16.726136130243592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1smaps!5e0!3m2!1spt-BR!2sbr!4v1723729468678!5m2!1spt-BR!2sbr"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1966.812877479565!2d-43.870386002577675!3d-16.694734241694825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xab5538564e029d%3A0x9c8521afcbcbfbbf!2zVmlhw6fDo28gQXZhbnRp!5e0!3m2!1spt-BR!2sbr!4v1723841948591!5m2!1spt-BR!2sbr"
                 allowFullScreen
                 loading="lazy"
               ></iframe>

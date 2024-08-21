@@ -5,9 +5,9 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 
 const images = [
-  "/frota-completa - Copia (3).png",
-  "/frota-completa - Copia (4).png",
-  "/frota-completa - Copia (5).png",
+  "/backgroundslider/banner-avanti-1.png",
+  "/backgroundslider/banner-avanti-2.png",
+  "/backgroundslider/banner-avanti-3.png",
 ];
 
 export default function BackgroundSlider() {
@@ -18,13 +18,13 @@ export default function BackgroundSlider() {
       setCurrentImage((prevImage) =>
         prevImage === images.length - 1 ? 0 : prevImage + 1
       );
-    }, 5000); // Tempo de troca em milissegundos (5 segundos)
+    }, 5000);
 
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <div className="relative w-full h-screen overflow-hidden">
+    <div className="relative w-full h-[50vh] overflow-hidden">
       {images.map((src, index) => (
         <div
           key={index}
@@ -35,8 +35,8 @@ export default function BackgroundSlider() {
           <Image
             src={src}
             alt={`Imagem de fundo ${index}`}
-            layout="fill"
-            objectFit="cover"
+            fill
+            className="object-cover"
             priority={true}
           />
         </div>

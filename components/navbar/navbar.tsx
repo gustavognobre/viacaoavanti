@@ -11,23 +11,30 @@ import { Button } from "@/components/ui/button"
 export default function Navbar() {
   return (
     <Popover className="fixed top-0 left-0 right-0 z-50 mx-auto flex items-center px-6 py-2 h-24 bg-white bg-opacity-30 backdrop-blur-lg rounded-lg">
-      <div className="max-w-40 mx-auto sm:max-w-20 md:max-w-32 md:mx-auto">
-        <Image
-          src="/logo-avanti.png"  // Caminho da imagem
-          alt="Descrição da imagem"
-          layout="responsive"  // Define o layout responsivo
-          width={20}          // Largura original da imagem
-          height={50}         // Altura original da imagem
-          priority={true}      // Prioridade de carregamento
-        />
-      </div>
+      <Link href="/">
+        <div className="max-w-40 mx-auto sm:max-w-20 md:max-w-32 md:mx-auto">
+          <Image
+            src="/logo-avanti.png"  // Caminho da imagem
+            alt="Descrição da imagem"
+            layout="responsive"  // Define o layout responsivo
+            width={20}          // Largura original da imagem
+            height={50}         // Altura original da imagem
+            priority={true}      // Prioridade de carregamento
+          
+          />
+        </div>
+      </Link>
+      {/* Aqui define os menus internos, como 3pontas e blog futuro */}
+      
+
       <div className="grow ltr:ml-3 rtl:mr-3">
         <div className="hidden sm:flex items-center justify-center gap-2 md:gap-8">
-        <Link href="https://www.google.com" passHref className="mr-2 font-bold"><Button variant="link">Ghost</Button></Link>
-        <Link href="https://www.google.com" passHref className="mr-2 font-bold"><Button variant="link">Ghost</Button></Link>
+        <Link href="/tres-pontas" className="mr-2 font-bold"><Button variant="link">Três Pontas</Button></Link>
         <Link href="https://www.linkedin.com/company/via-oavanti/jobs/" passHref className="mr-2 font-bold"><Button variant="link">Venha ser Avanti!</Button></Link>
         
         </div>
+      {/*Aqui ja são so menus em tela pequena*/}
+        
         <div className="flex grow items-center justify-end sm:hidden">
           <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
             <span className="sr-only">Open Menu</span>
@@ -59,12 +66,15 @@ export default function Navbar() {
                       </div>
                     </div>
                     <div className="mt-6">
+                      <nav className="grid gap-y-8 mb-5 hover:text-avanti-blue">
+                        <Link href="/tres-pontas" className="focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-50 px-2">Tres Pontas</Link>
+                      </nav>
                       <nav className="grid gap-y-8">
-                        <Link href="/home" className="focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-50 px-2">TESTE</Link>
+                        <Link href="https://www.linkedin.com/company/via-oavanti/jobs/" passHref className="focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-50 px-2">Venha ser Avanti</Link>
                       </nav>
                     </div>
                     <div className="mt-6 flex flex-col items-center gap-2">
-                      <Link href="https://www.google.com" passHref className="rounded-md bg-white px-4 py-2 text-sm font-medium text-black md:text-xl w-full border-2 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500">Google</Link>
+                      <Link href="https://wa.me/5538992300030?text=Gostaria%20de%20saber%20mais%20sobre%20a%20Via%C3%A7%C3%A3o%20Avanti" passHref className="rounded-md bg-white px-4 py-2 text-sm font-medium text-black md:text-xl w-full border-2 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500">Contato</Link>
                     </div>
                   </div>
                 </div>

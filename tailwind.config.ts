@@ -18,6 +18,9 @@ const config = {
       },
     },
     extend: {
+      fontFamily: {
+        montserrat: ['Montserrat', 'sans-serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -52,6 +55,15 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        avanti:{
+          blue:"#004AAD",
+          cerulioblue:"#0182C7",
+          neongreen:"#00FF01",
+          skyblue:"#38B6FF",
+          limegreen:"#7ED957",
+          naveblue:"#192840"
+
+        }
       },
       borderRadius: {
         lg: "var(--radius)",

@@ -12,45 +12,45 @@ import Image from "next/image";
 const vehicleDetails = [
     {
         id: 1,
+        name: "Veículo 3",
+        description: "Detalhes sobre o Veículo 3",
+        image: "/frota.jpg",
+    },
+    {
+        id: 2,
         name: "Veículo 1",
         description: "Detalhes sobre o Veículo 1",
         image: "/bus-one.png",
     },
     {
-        id: 2,
+        id: 3,
         name: "Veículo 2",
         description: "Detalhes sobre o Veículo 2",
-        image: "/bus-two.png",
+        image: "/frota-media.jpg",
     },
     {
-        id: 3,
+        id: 4,
         name: "Veículo 3",
         description: "Detalhes sobre o Veículo 3",
-        image: "/bus-three.png",
+        image: "/frota-menor.jpg",
     },
-    // Adicione mais veículos conforme necessário
+
 ];
 
 export default function Frota() {
     const [selectedVehicle, setSelectedVehicle] = useState<null | typeof vehicleDetails[number]>(null);
 
     return (
-        <div className="flex flex-col items-center justify-center p-6 bg-gray-100 relative">
-             <div className="max-w-7xl mx-auto">
-                    <h2 className="text-3xl font-bold text-gray-800 sm:text-4xl mb-8">
-                    Sobre noss Frota
-                    </h2>
-                    <div className="text-lg text-gray-600 leading-relaxed mb-8">
+        <div className="font-montserrat flex flex-col items-center justify-center p-6 bg-slate-100 relative">
+            <div className="max-w-7xl mx-auto text-left">
+                <h2 className="text-3xl font-bold  sm:text-4xl mb-8 text-left">
+                    Sobre nossa Frota
+                </h2>
+                <div className="text-lg  leading-relaxed mb-8">
                     <p className="mb-4">
-                        Com a grande expansão Industrial no norte de Minas, os irmãos Sapori desenvolveram um novo conceito de transporte, aproximando o Distrito Industrial das várias regiões de Montes Claros. 
+                        {/*AQUI COLOCAR TEXTO DE FROTA*/}
                     </p>
-                    <p className="mb-4">
-                        Com a missão de transportar com segurança e pontualidade, conquistou a confiança do mercado através de sua capacidade operacional e atendimento às necessidades de seus clientes.
-                    </p>
-                    <p>
-                        A Avanti vem trazendo em seu portfólio toda experiência no transporte corporativo atendendo a grandes Empresas no Norte do Estado de Minas Gerais com eficiência e padrão de qualidade de serviços certificada pela <span className="font-semibold text-gray-800">ISO 9001</span>.
-                    </p>
-                    </div>
+                </div>
             </div>
 
             <Carousel className="w-full max-w-screen-2xl">
@@ -78,17 +78,12 @@ export default function Frota() {
                     ))}
                 </CarouselContent>
 
-                <CarouselPrevious className="absolute left-4 top-1/2 transform -translate-y-1/2">
-                    {/* Botão para ir ao item anterior */}
-                </CarouselPrevious>
-                <CarouselNext className="absolute right-4 top-1/2 transform -translate-y-1/2">
-                    {/* Botão para ir ao próximo item */}
-                </CarouselNext>
+               
             </Carousel>
 
             {selectedVehicle && (
                 <div className="fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-70">
-                    <div className="bg-white p-6 rounded-lg shadow-lg max-w-md w-full">
+                    <div className="bg-white p-6 rounded-lg shadow-lg max-w-md w-full text-left">
                         <h3 className="text-2xl font-bold mb-4">{selectedVehicle.name}</h3>
                         <Image
                             src={selectedVehicle.image}
