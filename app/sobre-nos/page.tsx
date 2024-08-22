@@ -17,11 +17,8 @@ export default function Page() {
       <div className="flex justify-center">
         <BackgroundSlider/>
       </div>
-      <Servico/>
-      <Frota/>
-      
-      <HighlightCard/>
-      
+      <Sobre/>
+
       
       <Contato/>
       <Footer/>

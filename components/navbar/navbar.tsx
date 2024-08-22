@@ -30,6 +30,7 @@ export default function Navbar() {
       <div className="grow ltr:ml-3 rtl:mr-3">
         <div className="hidden sm:flex items-center justify-center gap-2 md:gap-8">
         <Link href="/tres-pontas" className="mr-2 font-bold"><Button variant="link">Três Pontas</Button></Link>
+        <Link href="/sobre-nos" className="mr-2 font-bold"><Button variant="link">Sobre Nós</Button></Link>
         <Link href="https://www.linkedin.com/company/via-oavanti/jobs/" passHref className="mr-2 font-bold"><Button variant="link">Venha ser Avanti!</Button></Link>
         
         </div>

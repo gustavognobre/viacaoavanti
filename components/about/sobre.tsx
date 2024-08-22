@@ -1,4 +1,5 @@
-import { FaUsers, FaChalkboardTeacher, FaCertificate, FaBusAlt } from 'react-icons/fa';    
+import { FaUsers, FaChalkboardTeacher, FaCertificate, FaBusAlt, FaCoins, FaEye } from 'react-icons/fa';    
+import { PiTargetBold } from "react-icons/pi";
 
 export default function Sobre() {
     return (
@@ -29,21 +30,21 @@ export default function Sobre() {
                 <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                     <div className="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
                         <div className="mb-2 text-blue-500">
-                            <FaBusAlt className="h-8 w-8" />
+                            <PiTargetBold className="h-8 w-8"/>
                         </div>
                         <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                            Garagem para Limpeza e Manutenção
+                            Nossa Missão
                         </h3>
                         <p className="text-gray-600">
-                            Possuímos uma garagem equipada para limpeza, manutenção, e revisões preventivas de toda a frota.
+                        Oferecer serviços de transporte empresarial e fretamento, com soluções personalizadas, inteligentes e inovadoras.
                         </p>
                     </div>
                     <div className="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
                         <div className="mb-2 text-blue-500">
-                            <FaUsers className="h-8 w-8" />
+                            <FaCoins className="h-8 w-8" />
                         </div>
                         <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                            Motoristas CLT
+                            Nosso Valores
                         </h3>
                         <p className="text-gray-600">
                             Nossos motoristas são contratados sob o regime CLT, garantindo direitos trabalhistas e maior segurança.
@@ -51,13 +52,13 @@ export default function Sobre() {
                     </div>
                     <div className="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
                         <div className="mb-2 text-blue-500">
-                            <FaChalkboardTeacher className="h-8 w-8" />
+                            <FaEye className="h-8 w-8" />
                         </div>
                         <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                            Treinamento e Capacitação
+                            Nossa Visão
                         </h3>
                         <p className="text-gray-600">
-                            Oferecemos treinamento contínuo e cursos de capacitação para todos os nossos motoristas.
+                            Expandir nossos serviços no mercado de transporte empresarial, aprimorando a Qualidade de nossos produtos, serviços e relacionamento com os nossos clientes.
                         </p>
                     </div>
                     <div className="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">

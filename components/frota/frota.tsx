@@ -18,15 +18,33 @@ const vehicleDetails = [
     },
     {
         id: 2,
+        name: "Veículo 3",
+        description: "Detalhes sobre o Veículo 3",
+        image: "/frota-semurbano.jpg",
+    },
+    {
+        id: 3,
         name: "Veículo 1",
         description: "Detalhes sobre o Veículo 1",
         image: "/bus-one.png",
     },
     {
-        id: 3,
+        id: 4,
         name: "Veículo 2",
         description: "Detalhes sobre o Veículo 2",
-        image: "/frota-media.jpg",
+        image: "/frota-sprinter.jpg",
+    },
+    {
+        id: 5,
+        name: "Veículo 3",
+        description: "Detalhes sobre o Veículo 3",
+        image: "/frota-scudo.jpg",
+    },
+    {
+        id: 1,
+        name: "Veículo 3",
+        description: "Detalhes sobre o Veículo 3",
+        image: "/frota-ducato.jpg",
     },
     {
         id: 4,
