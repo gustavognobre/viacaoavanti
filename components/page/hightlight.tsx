@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function HighlightCard() {
     return (
-        <div className="relative bg-avanti-blue text-white py-12 px-6 flex flex-col items-center justify-center">
+        <div className="relative bg-avanti-naveblue text-white py-12 px-6 flex flex-col items-center justify-center">
             {/* Background Image */}
             <div className="absolute inset-0 z-[-1]">
                 <Image

@@ -41,17 +41,6 @@ export default function Sobre() {
                     </div>
                     <div className="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
                         <div className="mb-2 text-blue-500">
-                            <FaCoins className="h-8 w-8" />
-                        </div>
-                        <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                            Nosso Valores
-                        </h3>
-                        <p className="text-gray-600">
-                            Nossos motoristas são contratados sob o regime CLT, garantindo direitos trabalhistas e maior segurança.
-                        </p>
-                    </div>
-                    <div className="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
-                        <div className="mb-2 text-blue-500">
                             <FaEye className="h-8 w-8" />
                         </div>
                         <h3 className="text-xl font-semibold text-gray-800 mb-2">
@@ -59,6 +48,17 @@ export default function Sobre() {
                         </h3>
                         <p className="text-gray-600">
                             Expandir nossos serviços no mercado de transporte empresarial, aprimorando a Qualidade de nossos produtos, serviços e relacionamento com os nossos clientes.
+                        </p>
+                    </div>
+                    <div className="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
+                        <div className="mb-2 text-blue-500">
+                            <FaCoins className="h-8 w-8" />
+                        </div>
+                        <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                            Nosso Valores
+                        </h3>
+                        <p className="text-gray-600">
+                            Nossos motoristas são contratados sob o regime CLT, garantindo direitos trabalhistas e maior segurança.
                         </p>
                     </div>
                     <div className="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
