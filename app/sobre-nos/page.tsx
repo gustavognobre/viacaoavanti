@@ -1,14 +1,12 @@
 "use client";
 
 import Sobre from "@/components/about/sobre";
-import Contato from "@/components/contato/contato";
-import Footer from "@/components/footer/rodape";
-import Frota from "@/components/frota/frota";
-import Navbar from "@/components/navbar/navbar";
+import Sobre_cards from "@/components/about/sobre-cards";
+import Contato from "@/components/about/contato";
+import Footer from "@/components/header/rodape";
+import Navbar from "@/components/header/navbar";
 import BackgroundSlider from "@/components/page/backgroundslider";
-import HighlightCard from "@/components/page/hightlight";
-import Servico from "@/components/servicos/servicos";
-import Image from "next/image";
+
 
 export default function Page() {
   return (
@@ -18,6 +16,7 @@ export default function Page() {
         <BackgroundSlider/>
       </div>
       <Sobre/>
+      <Sobre_cards/>
 
       
       <Contato/>

@@ -1,14 +1,16 @@
 "use client";
 
 import Sobre from "@/components/about/sobre";
-import Contato from "@/components/contato/contato";
-import Footer from "@/components/footer/rodape";
+import Contato from "@/components/about/contato";
+import Footer from "@/components/header/rodape";
 import Frota from "@/components/frota/frota";
-import Navbar from "@/components/navbar/navbar";
+import Navbar from "@/components/header/navbar";
 import BackgroundSlider from "@/components/page/backgroundslider";
 import HighlightCard from "@/components/page/hightlight";
-import Servico from "@/components/servicos/servicos";
+
 import Image from "next/image";
+import Servico from "@/components/about/servicos";
+import Diferenciais from "@/components/about/diferenciais";
 
 export default function Page() {
   return (
@@ -18,6 +20,7 @@ export default function Page() {
         <BackgroundSlider/>
       </div>
       <Servico/>
+      <Diferenciais/>
       <Frota/>
       
       <HighlightCard/>
