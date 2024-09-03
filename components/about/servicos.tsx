@@ -14,31 +14,30 @@ const serviceDetails = [
     id: 1,
     name: "Roteirização",
     description:
-      "Analisamos a melhor rota para o seu trajeto, com a finalidade de economizar tempo e custos.",
+      "Na Viação Avanti, oferecemos um serviço de roteirização eficiente para otimizar cada trajeto, garantindo uma viagem ágil e segura. Planejamos rotas inteligentes que reduzem custos e atendem às necessidades específicas do seu negócio. Com nossa roteirização estratégica, adaptamos cada rota para proporcionar um transporte corporativo que maximize a eficiência e minimize o tempo de deslocamento.",
     icon: <FaBusAlt className="h-12 w-12 text-blue-500" />,
   },
   {
     id: 2,
     name: "Adequação do cliente",
     description:
-      "Serviço adicional onde recebemos diretamente as solicitações dos funcionários da sua empresa.",
+      "Nossos serviços são totalmente personalizados para atender às demandas específicas de cada cliente. Na Viação Avanti, ajustamos nossas operações para se adequar a cada detalhe de sua necessidade, oferecendo um transporte customizado que garante a total satisfação de sua empresa. Nossa flexibilidade nos permite moldar nossos serviços às exigências do seu negócio, sempre com o objetivo de superar suas expectativas.",
     icon: <FaUsers className="h-12 w-12 text-blue-500" />,
   },
   {
     id: 3,
     name: "Fretamento empresarial",
     description:
-      "Serviço de transporte exclusivo para empresas, garantindo segurança e conforto para os funcionários.",
+      "A Viação Avanti é especialista em fretamento empresarial, oferecendo soluções que proporcionam conforto e praticidade para sua equipe. Nossos serviços de fretamento são projetados com flexibilidade e alta qualidade para atender às diversas necessidades de sua empresa. Estamos comprometidos em fornecer o melhor em transporte corporativo, garantindo que seus colaboradores cheguem com segurança e pontualidade aos seus destinos.",
     icon: <FaBusinessTime className="h-12 w-12 text-blue-500" />,
   },
   {
     id: 4,
     name: "Transporte corporativo empresarial",
     description:
-      "Soluções personalizadas para o transporte de colaboradores com eficiência e pontualidade.",
+      "Com expertise em transporte corporativo, a Viação Avanti oferece serviços dedicados a empresas que valorizam eficiência e conforto. Fornecemos transporte de alta qualidade, adaptado ao mundo dos negócios, para garantir que sua equipe esteja sempre onde precisa, de forma segura e pontual. Nossa missão é levar sua empresa mais longe com soluções de mobilidade superiores.",
     icon: <FaTrafficLight className="h-12 w-12 text-blue-500" />,
   },
-  
 ];
 
 export default function Servico() {
@@ -54,7 +53,7 @@ export default function Servico() {
         </h2>
         <div className="text-lg  leading-relaxed mb-8">
           <p className="mb-4">
-          Oferecemos serviços de fretamento empresarial personalizados, garantindo transporte seguro, confortável e eficiente para empresas de diversos setores no norte de Minas, sempre com pontualidade e qualidade.
+            Oferecemos serviços de fretamento empresarial personalizados, garantindo transporte seguro, confortável e eficiente para empresas de diversos setores no norte de Minas, sempre com pontualidade e qualidade.
           </p>
         </div>
       </div>
@@ -76,8 +75,8 @@ export default function Servico() {
       </div>
 
       {selectedService && (
-        <div className="fixed inset-0 flex items-center justify-center bg-gray-900 bg-opacity-70 transition-opacity duration-300">
-          <div className="relative bg-white p-8 rounded-2xl shadow-2xl max-w-lg w-full text-center transform transition-transform duration-300 ease-in-out">
+        <div className="fixed inset-0 flex items-center justify-center bg-gray-900 bg-opacity-70 transition-opacity duration-300 z-50">
+          <div className="relative bg-white p-8 rounded-2xl shadow-2xl max-w-lg w-full text-center transform transition-transform duration-300 ease-in-out z-50">
             <button
               onClick={() => setSelectedService(null)}
               className="absolute top-4 right-4 text-gray-500 hover:text-gray-700 transition-colors duration-300"

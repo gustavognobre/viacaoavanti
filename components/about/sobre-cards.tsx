@@ -14,7 +14,7 @@ export default function Sobre_cards() {
                             Nossa Missão
                         </h3>
                         <p className="text-gray-600">
-                        Oferecer serviços de transporte empresarial e fretamento, com soluções personalizadas, inteligentes e inovadoras.
+                        Na Viação Avanti, nossa visão é ser referência em transporte corporativo de qualidade e inovação. Aspiramos a liderar o setor com soluções de mobilidade que transformam o dia a dia das empresas, sempre com foco na excelência, segurança e sustentabilidade.
                         </p>
                     </div>
                     <div className="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
@@ -25,7 +25,7 @@ export default function Sobre_cards() {
                             Nossa Visão
                         </h3>
                         <p className="text-gray-600">
-                            Expandir nossos serviços no mercado de transporte empresarial, aprimorando a Qualidade de nossos produtos, serviços e relacionamento com os nossos clientes.
+                        A missão da Viação Avanti é garantir mobilidade com segurança e excelência, fornecendo soluções de transporte que superam as expectativas de nossos clientes. Estamos comprometidos em oferecer o melhor serviço de transporte corporativo, sempre focados em atender as necessidades de mobilidade das empresas com qualidade e eficiência.
                         </p>
                     </div>
                     <div className="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
@@ -36,7 +36,7 @@ export default function Sobre_cards() {
                             Nosso Valores
                         </h3>
                         <p className="text-gray-600">
-                            Nossos motoristas são contratados sob o regime CLT, garantindo direitos trabalhistas e maior segurança.
+                        Os valores da Viação Avanti são a base do nosso compromisso com a qualidade e o cliente. Valorizamos integridade, excelência, respeito ao meio ambiente e inovação contínua. Nossa atuação é guiada pela segurança, responsabilidade e foco no cliente, sempre buscando oferecer o melhor em transporte corporativo.
                         </p>
                     </div>
                     <div className="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
@@ -47,7 +47,7 @@ export default function Sobre_cards() {
                             Certificação ISO 9001
                         </h3>
                         <p className="text-gray-600">
-                            Todos os nossos serviços são certificados pela ISO 9001, garantindo qualidade e eficiência.
+                        Com a certificação ISO 9001, a Viação Avanti reafirma seu compromisso com a qualidade e a melhoria contínua de seus serviços. Este selo de qualidade é uma garantia de que seguimos os mais altos padrões de segurança e eficiência, proporcionando tranquilidade e confiança a nossos clientes.
                         </p>
                     </div>
                 </div>
