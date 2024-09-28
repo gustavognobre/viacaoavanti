@@ -59,8 +59,14 @@ export default function Frota() {
     null | (typeof vehicleDetails)[number]
   >(null);
 
-  // Função para desativar o scroll quando o modal está aberto
-  const handleVehicleSelect = (vehicle) => {
+  interface Vehicle {
+    id: number;
+    name: string;
+    description: string;
+    image: string;
+  }
+  
+  const handleVehicleSelect = (vehicle: Vehicle) => {
     setSelectedVehicle(vehicle);
     document.body.style.overflow = 'hidden';
   };
@@ -106,6 +112,8 @@ export default function Frota() {
             </CarouselItem>
           ))}
         </CarouselContent>
+        <CarouselPrevious />
+        <CarouselNext />
       </Carousel>
 
       {selectedVehicle && (

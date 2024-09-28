@@ -1,7 +1,8 @@
 import { FaUsers, FaChalkboardTeacher, FaCertificate, FaBusAlt, FaCoins, FaEye } from 'react-icons/fa';
 import { PiTargetBold } from "react-icons/pi";
+import { ReactNode } from 'react';
 
-function SectionTitle({ children }) {
+function SectionTitle({ children }: { children: ReactNode }) {
     return (
         <h2 className="text-3xl font-bold sm:text-4xl mb-8">
             {children}
@@ -9,7 +10,7 @@ function SectionTitle({ children }) {
     );
 }
 
-function Paragraph({ children }) {
+function Paragraph({ children }: { children: ReactNode }) {
     return (
         <p className="mb-4">
             {children}
