@@ -8,6 +8,7 @@ import Navbar from "@/components/header/navbar";
 import BackgroundSlider from "@/components/page/backgroundslider";
 import HighlightCard from "@/components/page/hightlight";
 import Image from "next/image";
+import Rotas from "@/components/about/contato copy";
 
 export default function Page() {
   return (
@@ -18,7 +19,7 @@ export default function Page() {
       </div>
 
 
-Tres pontas
+      <Rotas/>
       
       <Contato/>
       <Footer/>

@@ -24,6 +24,9 @@ export default function Navbar() {
       </div>
 
       <div className="hidden sm:flex items-center gap-8">
+        <Link href="https://escala.viacaoavanti.com.br/" passHref className="font-semibold hover:text-blue-600 transition">
+          <Button variant="link">Colaboradores</Button>
+        </Link>
         <Link href="/tres-pontas" className="font-semibold hover:text-blue-600 transition">
           <Button variant="link">Três Pontas</Button>
         </Link>
@@ -31,10 +34,10 @@ export default function Navbar() {
           <Button variant="link">Sobre Nós</Button>
         </Link>
         <Link href="https://www.linkedin.com/company/via-oavanti/jobs/" passHref className="font-semibold hover:text-blue-600 transition">
-          <Button variant="link">Venha ser Avanti!</Button>
+          <Button variant="link">Trabalhe conosco!</Button>
         </Link>
         <Link href="https://wa.me/5538992300030?text=Gostaria%20de%20saber%20mais%20sobre%20a%20Viação%20Avanti" passHref className="font-semibold hover:text-blue-600 transition">
-          <Button variant="ghost">Contato</Button>
+          <Button variant="link">Contato</Button>
         </Link>
       </div>
 
@@ -79,6 +82,9 @@ export default function Navbar() {
               </div>
               <div className="mt-6">
                 <nav className="grid gap-y-4">
+                <Link href="https://escala.viacaoavanti.com.br/" passHref className="block font-medium text-gray-700 hover:text-blue-600 transition">
+                    Colaboradores
+                  </Link>
                   <Link href="/tres-pontas" className="block font-medium text-gray-700 hover:text-blue-600 transition">
                     Três Pontas
                   </Link>
@@ -86,7 +92,7 @@ export default function Navbar() {
                     Sobre Nós
                   </Link>
                   <Link href="https://www.linkedin.com/company/via-oavanti/jobs/" passHref className="block font-medium text-gray-700 hover:text-blue-600 transition">
-                    Venha ser Avanti!
+                    Trabalhe conosco!
                   </Link>
                   <Link href="https://wa.me/5538992300030?text=Gostaria%20de%20saber%20mais%20sobre%20a%20Viação%20Avanti" passHref className="block font-medium text-gray-700 hover:text-blue-600 transition">
                     Contato

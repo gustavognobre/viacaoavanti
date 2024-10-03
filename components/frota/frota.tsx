@@ -112,8 +112,8 @@ export default function Frota() {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
+        <CarouselPrevious className="absolute left-0" />
+        <CarouselNext className="absolute right-0" />
       </Carousel>
 
       {selectedVehicle && (

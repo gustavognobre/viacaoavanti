@@ -24,7 +24,7 @@ export default function BackgroundSlider() {
   }, []);
 
   return (
-    <div className="relative w-full h-[50vh] overflow-hidden">
+    <div className="relative w-full h-[25vh] lg:h-[50vh] overflow-hidden">
       {images.map((src, index) => (
         <div
           key={index}
